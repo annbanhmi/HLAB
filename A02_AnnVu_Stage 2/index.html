@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.,minmum-scale=1">
+    <title>HLAB Furniture </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Link model viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!--header section-->
+   <section id="header">
+        <a href="#"><img class="logo" src="img/hlab logo.png" class="logo" alt=""></a>
+        <div> 
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="sproduct.html">Feature Product</a></li>
+                <li><a href="collection.html">New Collection</a></li>
+               
+            </ul>
+        </div>
+        
+        <div id="mobile">
+            
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+   </section>
+
+    <!--slide section-->
+    <section id="hero">
+    <div class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                    
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+    <!--slider section end-->
+    <!-- Link to script.js file -->
+    <script src="script.js"></script> 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   
+
+
+   <!--feature section-->
+   <section id="feature" class="section-p1">
+    <div class="fe-box">
+        <h6>Free Shipping</h6>
+        <img src="./img/feature/free-shipping.png" alt="">
+        
+    </div>
+
+    <div class="fe-box">
+        <h6>Contactless Delivery</h6>
+        <img src="./img/feature/contactless.png" alt="">
+       
+    </div>
+
+    <div class="fe-box">
+        <h6>Online Order</h6>
+        <img src="./img/feature/order-now.png" alt="">
+        
+    </div>
+
+    <div class="fe-box">
+        <h6>Save Time</h6>
+        <img src="./img/feature/save-time.png" alt="">
+        
+    </div>
+
+    <div class="fe-box">
+        <h6>Promotion</h6>
+        <img src="./img/feature/promotion.png" alt="">
+        
+    </div>
+
+    <div class="fe-box">
+        <h6>24/7 Customer Support</h6>
+        <img src="./img/feature/support.png" alt="">
+      
+    </div>
+   </section>
+
+   <section id="product1" class="section-p1">
+    <h2> Featured Products</h2>
+    <p> Spring Collection Minimalism Modern Design </p>
+    <div class="pro-container">
+        <div class="pro">
+            <model-viewer id="chair" src="./models/JRMY.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./img/JRMY.webp" shadow-intensity="1" exposure="1.11" auto-rotate camera-orbit="90deg 70.71deg 4.5m" field-of-view="30deg"> 
+        
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+            </model-viewer>
+            
+            <div class="des">
+                <span>Humber Industrial Design '24</span>
+                <h5>JRMY Chair</h5>
+                <h4>$100.00</h4>
+            </div>
+            <a href="sproduct.html"><button>View More <i class="fa-solid fa-cart-shopping"></i></button></a>
+        </div>
+        
+         <div class="pro">
+            <model-viewer src="./models/Oba.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+              </model-viewer>
+
+            <div class="des">
+                <span>Humber Industrial Design '24</span>
+                <h5>Oba Chair</h5>
+                <h4>$100.00</h4>
+            </div>
+            <a href="sproduct.html"><button>View More <i class="fa-solid fa-cart-shopping"></i></button></a>
+        </div>
+
+        <div class="pro">
+            <model-viewer src="./models/Onsilla.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+              </model-viewer>
+
+            <div class="des">
+                <span>Humber Industrial Design '24</span>
+                <h5>Onsilla Chair</h5>
+                <h4>$100.00</h4>
+            </div>
+            <a href="sproduct.html"><button>View More <i class="fa-solid fa-cart-shopping"></i></button></a>
+     </div>
+
+     <div class="pro">
+        <model-viewer src="./models/Picard.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        
+          </model-viewer>
+
+        <div class="des">
+            <span>Humber Industrial Design '24</span>
+            <h5>Picard Chair</h5>
+            <h4>$100.00</h4>
+        </div>
+        <a href="sproduct.html"><button>View More <i class="fa-solid fa-cart-shopping"></i></button></a>
+ </div>
+ 
+     <div class="pro">
+        <model-viewer src="./models/Avona.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+          </model-viewer>
+
+        <div class="des">
+            <span>Humber Industrial Design '24</span>
+            <h5>Avona Chair</h5>
+            <h4>$100.00</h4>
+        </div>
+        <a href="sproduct.html"><button>View More <i class="fa-solid fa-cart-shopping"></i></button></a>
+ </div>
+
+       
+         
+         <div class="pro">
+            <model-viewer src="./models/Sitzplatz.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+              </model-viewer>
+
+            <div class="des">
+                <span>Humber Industrial Design '24</span>
+                <h5>Sitzplatz Chair</h5>
+                <h4>$100.00</h4>
+            </div>
+            <a href="sproduct.html"><button>View More <i class="fa-solid fa-cart-shopping"></i></button></a>
+     </div>
+    </div>
+   </section>
+
+   <section id="banner" class="section-m1">
+    <h4>SPRING PROMOTION</h4>
+    <h2>Up to <span>20% Off</span> - OBA Chair</h2>
+    <a href="sproduct.html"><button class="normal"> See More</button></a>
+   </section>
+
+    <!--newsletter section-->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span>
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+ <!--footer section-->
+   <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/hlab logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 205 Humber College Blvd, Etobicoke, Ontario, Canada</p>
+        <p><strong>Phone:</strong> (+1) 437 799 6899</p>
+        <p><strong>Email:</strong> hello@hlabfurniture.com</p>
+        <p><strong>Working Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Term & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg"alt="">
+            <img src="img/pay/play.jpg"alt="">
+        </div>
+        <p>Secured Payment Gateway</p>
+        <img src="img/pay/pay.png"alt="">
+    </div>
+   
+    <div class="copyright">
+        <p>HLAB Furniture &copy;Copyright 2024</p>
+      
+    </div>
+
+   </footer>
+
+</body>
+</html>

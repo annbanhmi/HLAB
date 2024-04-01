@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.,minmum-scale=1">
+    <title>HLAB Furniture </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Link model viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!--header section-->
+   <section id="header">
+        <a href="#"><img class="logo" src="img/hlab logo.png" class="logo" alt=""></a>
+        <div> 
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="sproduct.html">Feature Product</a></li>
+                <li><a href="collection.html">New Collection</a></li>
+               
+            </ul>
+        </div>
+        
+        <div id="mobile">
+           
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+   </section>
+
+   <!-- Product section -->
+    <!-- OBA Change Color -->
+    <section id="Oba-section">
+        <div class="product-info">
+            <div class="product-title">
+                <h2>Oba Sunglow Yellow</h2>
+            </div>
+            <div class="product-description">
+                <p>Our Oba redefine comfort <br>with a touch of luxury.</p>
+            </div>
+        </div>
+        <model-viewer id="ObaModel" src="./models/Oba.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1" camera-orbit="-30deg 75deg 5.405m" field-of-view="22.22deg" auto-rotate>
+            <button id="change-color" class="Hotspot" slot="hotspot-1" data-position="0.01085693222969765m 0.3436632677019572m 0.988541493112017m" data-normal="0m 1.3435886108395827e-7m 0.999999999999991m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Change Color</div>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+            </button>
+        </model-viewer>
+    </section>
+
+    <!-- OBA Dimension -->
+    <section id="oba-green">
+        <div class="product-info">
+            <div class="product-title">
+                <h2>Oba In the Forest</h2>
+            </div>
+            <div class="product-description">
+                <p>Explore comfort with a touch of <br>chic in every chair.</p>
+            </div>
+        </div>
+        <model-viewer id="chair" src="./models/Oba-green.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1" exposure="1.11" camera-orbit="180deg 70.71deg 4.5m" field-of-view="30deg" auto-rotate> 
+            <button slot="hotspot-dot+X-Y+Z" class="dot" data-position="1 -1 1" data-normal="1 0 0"></button>
+            <button slot="hotspot-dim+X-Y" class="dim" data-position="1 -1 0" data-normal="1 0 0"></button>
+            <button slot="hotspot-dot+X-Y-Z" class="dot" data-position="1 -1 -1" data-normal="1 0 0"></button>
+            <button slot="hotspot-dim+X-Z" class="dim" data-position="1 0 -1" data-normal="1 0 0"></button>
+            <button slot="hotspot-dot+X+Y-Z" class="dot" data-position="1 1 -1" data-normal="0 1 0"></button>
+            <button slot="hotspot-dim+Y-Z" class="dim" data-position="0 -1 -1" data-normal="0 1 0"></button>
+            <button slot="hotspot-dot-X+Y-Z" class="dot" data-position="-1 1 -1" data-normal="0 1 0"></button>
+            <button slot="hotspot-dim-X-Z" class="dim" data-position="-1 0 -1" data-normal="-1 0 0"></button>
+            <button slot="hotspot-dot-X-Y-Z" class="dot" data-position="-1 -1 -1" data-normal="-1 0 0"></button>
+            <button slot="hotspot-dim-X-Y" class="dim" data-position="-1 -1 0" data-normal="-1 0 0"></button>
+            <button slot="hotspot-dot-X-Y+Z" class="dot" data-position="-1 -1 1" data-normal="-1 0 0"></button>
+            <svg id="dimLines" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="dimensionLineContainer">
+                <line class="dimensionLine"></line>
+                <line class="dimensionLine"></line>
+                <line class="dimensionLine"></line>
+                <line class="dimensionLine"></line>
+                <line class="dimensionLine"></line>
+            </svg>
+            <div id="controls" class="dim">
+                <label for="show-dimensions">Show Dimensions</label>
+                <input id="show-dimensions" type="checkbox" checked="true">
+            </div>
+        </model-viewer>
+    </section>
+
+    <!-- OBA Camera -->
+    <section id="desk-section">
+        <div class="product-info">
+            <div class="product-title">
+                <h2>Oba Burnt Orange</h2>
+            </div>
+            <div class="product-description">
+                <p>Customized pattern <br>that matches with with your personal style.</p>
+            </div>
+        </div>
+        <model-viewer id="oba-orange" tone-mapping="commerce" src="./models/Oba-orange.glb" ar ar-modes="webxr scene-viewer quick-look" interpolation-decay="200" auto-rotate >
+            
+        </model-viewer>
+    </section>
+
+    <!-- Inspiration -->
+    <section id="inspiration-section">
+        <div class="product-info">
+            <div class="product-title">
+                <h2>Showroom Exhibition</h2>
+            </div>
+            <div class="product-description">
+                <p>highlighting the artistry and craftsmanship behind our latest chair designs, <br>set within an elegantly curated space.</p>
+            </div>
+        </div>
+
+        <model-viewer id="room" camera-controls touch-action="pan-y" src="./models/3D Sets Experiment.glb" camera-controls camera-orbit="33.01deg 76.28deg 8m" field-of-view="30deg">
+            <div id="control-light"  class="dim">
+                <label for="neutral">Sunlight </label>
+                <input id="neutral" type="checkbox" checked="true">
+            </div>
+        </model-viewer> 
+    </section>
+
+    <!-- Footer -->
+   <!--newsletter section-->
+   <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers</span>
+        </p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your Email Address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+<!--footer section-->
+<footer class="section-p1">
+<div class="col">
+    <img class="logo" src="img/hlab logo.png" alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> 205 Humber College Blvd, Etobicoke, Ontario, Canada</p>
+    <p><strong>Phone:</strong> (+1) 437 799 6899</p>
+    <p><strong>Email:</strong> hello@hlabfurniture.com</p>
+    <p><strong>Working Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+    <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Term & Conditions</a>
+    <a href="#">Contact Us</a>
+</div>
+
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+</div>
+
+<div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+        <img src="img/pay/app.jpg"alt="">
+        <img src="img/pay/play.jpg"alt="">
+    </div>
+    <p>Secured Payment Gateway</p>
+    <img src="img/pay/pay.png"alt="">
+</div>
+
+<div class="copyright">
+    <p>HLAB Furniture &copy;Copyright 2024</p>
+  
+</div>
+
+</footer>
+
+</body>
+</html>
+
+
