@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size:50px;
+    line-height:64px;
+    color:#2f2f2f
+}
+
+h2 {
+    font-size: 46px;
+    line-height:54px;
+    color:#2f2f2f
+}
+
+h4 {
+    font-size: 20px;
+    color:#2f2f2f
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color:#000000;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* header start */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f1f1f1;
+    padding: 0.1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+#header .logo
+{
+    width:130px;
+    margin-top: 0;
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     position: sticky;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 510;
+    color: #D6CFC8;
+    transition: 0.3 ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+color:rgb(0, 119, 255);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: #ff2a2a;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+/*slide style start*/
+.home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-start;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    flex-direction: column;
+}
+.collection {
+    display: flex;
+    align-items: center;
+    background-size: cover; 
+   background-repeat: no-repeat;
+   height: auto;
+   width: 100%;
+}
+.home .home-slider .slide1 {
+    background: url("../img/products/Hero1.png");
+
+} 
+
+.home .home-slider .slide2 {
+    background: url("../img/products/Hero2.png");
+    justify-content: center;
+    align-items: center;;
+
+
+} 
+
+.home .home-slider .slide3 {
+    background: url("../img/products/Hero3.png");
+
+} 
+
+#hero .home .home-slider .slide1,
+#hero .home .home-slider .slide2,
+#hero .home .home-slider .slide3 {
+   background-size: cover; 
+   background-repeat: no-repeat;
+   height: 90vh;
+   width: 100%;
+   background-size: cover;
+   background-position: top 25% right 0;
+   padding: 0 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: center;
+}
+#hero .home .home-slider .slide .content {
+    text-align: center;
+    padding-left: 9rem;
+}
+#hero .home .home-slider .slide .content h3 {
+    color: var(--light-color);
+    font-size: 3rem;
+    font-weight: 300;
+}
+#hero .home .home-slider .slide .content h1{
+    color: #fff;
+    font-size: 8rem;
+} 
+#hero .home .home-slider .slide .content p{
+    color: #e6e7e7;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding: .5rem 0;
+    line-height: 1.5;
+    font-weight: 300;
+
+}
+#hero .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #e2a453;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    position: relative;
+    overflow:hidden;
+    z-index: 1;
+}
+#hero .btn:hover{
+    transform: scale(120%);
+}
+
+#hero span.swiper-pagination-bullet {
+    background:#fff;
+    width: 10px;
+    height:10px;
+    border-radius: 100;
+}
+
+#hero div.swiper-button-next, div.swiper-button-prev {
+    color:#fff;
+}
+
+/*slide style end*/
+
+
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h4 span{
+    background-color:#ffda6a;
+    padding: 1 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+#hero h1{
+    color: #D6CFC8;
+}
+
+
+/* shopping feature style */
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 200px;
+    height: 240px;
+    text-align:center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(147, 147, 147);
+    border: 0.5px solid#e0e0e0;
+    border-radius: 4px;
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+#feature .fe-box:hover{
+box-shadow: 5px 5px 64px #2f2f2f;
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #e0e0e0;
+    background-color: rgb(24, 34, 44);
+}
+/* featured product style */
+#product1 {
+    text-align:center;
+}
+
+#product1 .pro-container{
+    display:flex;
+    justify-content:space-between;
+    padding-top: 20px;
+    justify-items: center;
+    flex-wrap:wrap;
+    padding: 0px 100px;
+
+}
+#product1 h2{
+    color:rgb(24, 34, 44);
+}
+
+#product1 .pro{
+    width:23%;
+    min-width: 400px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position:relative;
+    
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px;
+}
+
+/*model viewer */
+#product1 .pro-container .pro model-viewer {
+    height: 400px;
+    width: 380px;
+    align-items: center;
+    background-color: #D6CFC8;
+}
+/* Product section */
+.product-info {
+    display: flex;
+    padding:80px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.product-title,
+.product-description {
+    flex: 1;
+    flex-direction:row;
+    padding-right: 0; 
+    text-align: center;
+}
+
+.product-title{
+    text-align: center;
+
+}
+
+.product-description{
+    align-items: center;
+    font-weight: 600;
+}
+
+/* 3D model */
+model-viewer {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 80vh;
+    background-color:#D6CFC8;
+    box-shadow: 0px 4px 8px rgba(41, 41, 41, 0.1);
+    border-radius: 30px;
+}
+
+.Hotspot {
+    background: #fff;
+    border-radius: 32px;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 24px;
+    padding: 8px;
+    position: relative;
+    transition: opacity 0.3s;
+    width: 24px;
+}
+  
+.Hotspot:not([data-visible]) {
+    background: transparent;
+    border: 4px solid #D6CFC8;
+    box-shadow: none;
+    height: 32px;
+    pointer-events: none;
+    width: 32px;
+}
+  
+.Hotspot:focus {
+    border: 4px solid rgb(0, 128, 200);
+    height: 32px;
+    outline: none;
+    width: 32px;
+}
+
+.Hotspot > * {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+  
+.HotspotAnnotation {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-size: 16px;
+    left: calc(100% + 1em);
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position:absolute;
+    top: 50%;
+    width: max-content;
+}
+  
+.Hotspot:not([data-visible]) > * {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(calc(-50% + 4px));
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.larger-example {
+    width: 600px;
+    height: 500px;
+    background-color: rgb(208, 198, 182);
+}
+
+#model-info {
+    display: none;
+}
+.visible {
+    display: block;
+}
+/* Chair & Inspiration*/
+#controls,
+#control-light {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    max-width: unset;
+    transform: unset;
+    pointer-events: auto;
+    z-index: 100;
+  }
+
+.dot {
+    display: none;
+}
+
+.dim {
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform: translate3d(-50%, -50%, 0);
+    pointer-events: none;
+    --min-hotspot-opacity: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .dim {
+      font-size: 3vw;
+    }
+}
+
+.dimensionLineContainer {
+    pointer-events: none;
+    display: block;
+}
+
+.dimensionLine {
+    stroke:#4d4d4d;
+    stroke-width: 2;
+    stroke-dasharray: 2;
+}
+
+.hide {
+    display: none;
+}
+
+
+#product1 .pro-container button{
+    color: #282828;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px 30px 14px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#product1 .pro-container button:hover{
+    color:#000000;
+    zoom:110%;
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: center;
+    padding: 10px 0;
+    text-decoration-line: none;
+}
+#product1 .pro .des span{   
+    color: #D6CFC8;
+    font-size: 12px;
+    text-decoration-line: none;
+}
+
+#product1 .pro .des h5,i{   
+    color: #2f2f2f;
+    font-size: 15px;
+}
+#product1 .pro .des i{   
+    color: #D6CFC8;
+    font-size: 12px;
+}
+
+#product1 .pro .des h4{ 
+      padding-top: 7px;
+      font-size: 15px;
+      font-weight: 700;
+      color:cadetblue;
+}
+/* banner style */
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url("/Users/macbook/Documents/School/Web Tech/FinalAssignment_Thi Van Anh Vu/img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#banner h2 {
+    color:#303030;
+}
+#banner h4 {
+    color:#ff2a2a;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+#banner span {
+    color:#ff3c3c;
+}
+
+#banner button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin: 15px 0;
+    color: #000;
+    background-color:#D6CFC8;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#banner button:hover {
+    background:#000;
+    color:#fff;
+}  
+
+/* newsletter style */
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("/Users/macbook/Documents/School/Web Tech/FinalAssignment_Thi Van Anh Vu/img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color:#2f2f2f;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #D6CFC8;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+#newsletter p span{
+    color: #ff3c3c;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 2.5rem;
+    padding:0 1.25rem;
+    font-size: 14px;
+    font-weight: 600px;
+    width: 100%;
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+}
+#newsletter button{
+    background-color:#D6CFC8;
+    padding: 0 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color:#fff;
+    white-space: nowrap;
+}
+/* about contact style */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    width:200px;
+    margin-bottom: 30px;
+}
+
+
+footer h4{
+    font-size: 14px;
+    color:#2f2f2f;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    color:#2f2f2f;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#393838;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color:#202020;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border: 1px solid #4d4d4d;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color:#D6CFC8;
+}
+footer .copyright{
+    width:100%;
+    text-align: center;
+}
+
+/* Shop Page */
+#page-header{
+    background-image: url("/Users/macbook/Documents/School/Web Tech/FinalAssignment_Thi Van Anh Vu/img/banner/b1.jpg");
+    width:100%;
+    height:40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2{
+    color: #000000;
+}
+#page-header p{
+  color:#ffffff; 
+}
+#pagination{
+    text-align:center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #D6CFC8;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color:#fff;
+    font-weight: 600;
+}
+
+/* Single Product Detail */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px; 
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details h4,h6,h2{
+    color:#2f2f2f;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top:30px;
+    
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+outline: none;
+}
+#prodetails .single-pro-details button{
+    font-size: 16px;
+    background:#2f2f2f;
+    color:#ffffff;
+    padding: 10px 15px;
+    border: none;
+}
+#prodetails .single-pro-details button:hover{
+    background:#D6CFC8;
+}
+#prodetails .single-pro-details span{
+    line-height:25px;
+    font-size: 12px;
+}
+
+
+
+
+
+/* Start Media Query */
+
+@media (max-width:799px){
+    #navbar{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 150px;
+        background-color: #f1f1f1;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 1;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:#2f2f2f;
+        font-size: 24px;
+        padding-left:20px;
+    }
+    #hero, #feature, #product1 {
+        max-width: 75%;
+        justify-content: center;
+    }
+   
+    footer {
+        max-width: 60%;
+    }
+}
+
+
+
+
+
