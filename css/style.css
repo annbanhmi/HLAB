@@ -310,9 +310,10 @@ box-shadow: 5px 5px 64px #2f2f2f;
     background-color: #D6CFC8;
 }
 
-view-btn {
+.view-btn {
     color: #282828;
     border: 0;
+    background-color: #fff;
     border-radius: 15px;
     padding: 10px 30px 14px 30px;
     background-repeat: no-repeat;
