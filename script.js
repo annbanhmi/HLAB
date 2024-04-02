@@ -181,20 +181,34 @@ const renderSVG = () => {
  });
 
  //OBA Interpolation Camera
+ 
  document.addEventListener('DOMContentLoaded', () => {
-    const modelViewer = document.querySelector('#oba-orange');
-    const orbitCycle = [
-      '45deg 55deg 4m',
-      '-60deg 110deg 2m',
-      modelViewer.cameraOrbit
-    ];
-  
-    setInterval(() => {
-      const currentOrbitIndex = orbitCycle.indexOf(modelViewer.getCameraOrbit());
-      modelViewer.cameraOrbit = orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
-      modelViewer.dispatchEvent(new CustomEvent('camera-change')); // Ensure UI updates if applicable
-    }, 3000);
-  });
+    // Select the model viewer by its ID
+    const modelViewer = document.getElementById('oba-orange');
+
+    // Ensure the model viewer is found before proceeding
+    if (modelViewer) {
+        // Query all buttons with the class 'view-btn' within the model viewer
+        const hotspotButtons = modelViewer.querySelectorAll('.view-btn');
+
+        // Iterate over each button and attach a click event listener
+        hotspotButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Retrieve the 'data-orbit' attribute value of the clicked button
+                const orbit = button.getAttribute('data-orbit');
+
+                // Update the model viewer's camera orbit to the new value
+                modelViewer.cameraOrbit = orbit;
+
+
+            });
+        });
+    } else {
+        // Log an error if the model viewer could not be found
+        console.error('Model viewer with ID #oba-orange not found.');
+    }
+});
+
 
   // Inspiration - change environmental light using own image
 (() => {

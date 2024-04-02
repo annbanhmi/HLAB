@@ -65,7 +65,7 @@
                 <p>Explore comfort with a touch of <br>chic in every chair.</p>
             </div>
         </div>
-        <model-viewer id="chair" src="./models/Oba-green.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1" exposure="1.11" camera-orbit="180deg 70.71deg 4.5m" field-of-view="30deg" auto-rotate> 
+        <model-viewer id="chair" src="./models/Oba-green.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1" exposure="1.11" camera-orbit="0deg 70.71deg 4.5m" field-of-view="30deg" auto-rotate> 
             <button slot="hotspot-dot+X-Y+Z" class="dot" data-position="1 -1 1" data-normal="1 0 0"></button>
             <button slot="hotspot-dim+X-Y" class="dim" data-position="1 -1 0" data-normal="1 0 0"></button>
             <button slot="hotspot-dot+X-Y-Z" class="dot" data-position="1 -1 -1" data-normal="1 0 0"></button>
@@ -88,6 +88,9 @@
                 <label for="show-dimensions">Show Dimensions</label>
                 <input id="show-dimensions" type="checkbox" checked="true">
             </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
         </model-viewer>
     </section>
 
@@ -101,8 +104,19 @@
                 <p>Customized pattern <br>that matches with with your personal style.</p>
             </div>
         </div>
-        <model-viewer id="oba-orange" tone-mapping="commerce" src="./models/Oba-orange.glb" ar ar-modes="webxr scene-viewer quick-look" interpolation-decay="200" auto-rotate >
-            
+        <model-viewer id="oba-orange" tone-mapping="commerce" src="./models/Oba-orange.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1" exposure="1.11" camera-orbit="0deg 70.71deg 4.5m" field-of-view="30deg" auto-rotate>
+            <button class="view-btn" slot="hotspot-1" data-position="0.01750232899005609m 0.6818185100511243m -0.12752029912302323m" data-normal="1.9345447500736353e-7m 0.9999999999999812m -1.4431001836682452e-8m" data-orbit="362.5deg 22.86deg 3m" data-target="0 0 -1">
+                Top View
+            </button>
+            <button class="view-btn" slot="hotspot-2" data-position="-0.013960907541133622m 0.5981801131048301m 0.2941882040810173m" data-normal="-0.1736482441380419m -2.1768039353100972e-7m 0.9848077412915313m" data-orbit="363.6deg 77.44deg 3m" data-target="0 0 1">
+                Front View
+            </button>
+            <button class="view-btn" slot="hotspot-3" data-position="0.6531500062253638m 0.6637803834874141m 0.21725698313599134m" data-normal="0.9848077412915444m -1.8800954617418861e-7m 0.17364824413800262m" data-orbit="419.4deg 78.61deg 3m"  data-target="1 0 0">
+                Side View
+            </button>
+            <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
         </model-viewer>
     </section>
 
@@ -197,6 +211,7 @@
 </footer>
 
 </body>
+<script src="script.js"></script>
 </html>
 
 
