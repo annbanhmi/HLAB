@@ -309,6 +309,18 @@ box-shadow: 5px 5px 64px #2f2f2f;
     align-items: center;
     background-color: #D6CFC8;
 }
+
+.view-btn {
+    color: #282828;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px 30px 14px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+}
+
 /* Product section */
 .product-info {
     display: flex;
